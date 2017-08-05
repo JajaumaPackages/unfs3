@@ -1,0 +1,11 @@
+[Unit]
+Description=UNFS3 user-space NFS server
+After=network.target
+
+[Service]
+ExecStart=/usr/sbin/unfsd -i /var/run/unfsd.pid
+Type=forking
+PIDFile=/var/run/unfsd.pid
+
+[Install]
+WantedBy=multi-user.target
