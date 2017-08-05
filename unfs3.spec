@@ -8,9 +8,10 @@ URL:            http://unfs3.sourceforge.net
 Source0:        https://downloads.sourceforge.net/project/unfs3/unfs3/%{version}/unfs3-%{version}.tar.gz
 Source1:        unfs3.service
 
-BuildRequires:  systemd
+BuildRequires:  byacc
 BuildRequires:  bison
 BuildRequires:  flex
+BuildRequires:  systemd
 %{?systemd_requires}
 
 
